@@ -24,4 +24,10 @@ describe Solver do
       expect { @solver.factorial(-1) }.to raise_error(ArgumentError, 'Input must be a non-negative number!')
     end
   end
+
+  describe '#reverse' do
+    it 'should reverse the word' do
+      expect(@solver.reverse('hello')).to eq('olleh')
+    end
+  end
 end
