@@ -30,4 +30,22 @@ describe Solver do
       expect(@solver.reverse('hello')).to eq('olleh')
     end
   end
+
+  describe '#reverse' do
+  it 'should return fizzbuzz' do
+    expect(@solver.fizzbuzz(15)).to eq('fizzbuzz')
+  end
+
+  it 'should return fizz' do
+    expect(@solver.fizzbuzz(12)).to eq('fizz')
+  end
+
+  it 'should return buzz' do
+    expect(@solver.fizzbuzz(20)).to eq('buzz')
+  end
+
+  it 'should return the number as a string' do
+    expect(@solver.fizzbuzz(19)).to eq('19')
+  end
+end
 end
